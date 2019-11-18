@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.intro {
+  height: 150vh;
+  width: 100%;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+
+.intro video {
+  width: 50%;
+  margin-left: 28vw;
+  margin-top: 100px;
+}
+
+
+
+.labels span {
+  position: fixed;
+  right: 13vw;
+  top: 580px;
+  opacity: 0;
+}
+
+.active {
+  animation: visible 3s forwards;
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+.labels span:nth-of-type(2) {
+  position: fixed;
+  left: 15vw;
+  top: 640px;
+  opacity: 0;
+}
+
+.labels span:nth-of-type(3) {
+  position: fixed;
+  left: 15vw;
+  top: 410px;
+  opacity: 0;
+}
+
+.labels span:nth-of-type(4) {
+  position: fixed;
+  right: 12vw;
+  top: 310px;
+  opacity: 0;
+}
+
+.labels span:nth-of-type(5) {
+  position: fixed;
+  right: 40vw;
+  top: 110px;
+  opacity: 0;
+}
+
+section {
+  height: 100vh;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+section h1 {
+
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Futura', sans-serif;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: -19vh;
+  left: 41vw;
+}
+
+section img {
+  margin-top: 13vh;
+}
+
+.description {
+  width: 40vw;
+  height: 70vh;
+  position: absolute;
+  right: 10vw;
+  top: 13vh;
+}
+
+.description p {
+  color: black;
+  margin-top: 6vh;
+  font-size: 20px;
+  margin-left: 5vw;
+  opacity: 0;
+}
